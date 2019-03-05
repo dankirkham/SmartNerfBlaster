@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name SmartNerfBlaster)(type Legacy)(uri ${KIPRJMOD}/SmartNerfBlaster.lib)(options "")(descr ""))
+)
