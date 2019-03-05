@@ -9,7 +9,15 @@
     (nets 33)
   )
 
-  (page A4)
+  (page USLetter)
+  (title_block
+    (title SmartNerfBlaster)
+    (date 2019-03-04)
+    (rev v1)
+    (company "Dan Kirkham")
+    (comment 1 github.com/dankirkham)
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
