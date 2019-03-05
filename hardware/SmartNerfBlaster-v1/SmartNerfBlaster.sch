@@ -249,7 +249,7 @@ U 1 1 5C6782F7
 P 1400 2800
 F 0 "J1" H 1506 2978 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 1506 2887 50  0000 C CNN
-F 2 "NerfPlasterFootprints:XT-60" H 1400 2800 50  0001 C CNN
+F 2 "SmartNerfBlasterFootprints:XT-60" H 1400 2800 50  0001 C CNN
 F 3 "~" H 1400 2800 50  0001 C CNN
 	1    1400 2800
 	1    0    0    -1  

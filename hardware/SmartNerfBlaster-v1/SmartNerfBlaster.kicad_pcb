@@ -101,7 +101,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "smartnerfblaster_v1"))
+      (outputdirectory "outputs/gerber/"))
   )
 
   (net 0 "")
@@ -2594,7 +2594,7 @@
   (segment (start 208.25 86.654) (end 210.75 89.154) (width 0.254) (layer F.Cu) (net 32))
   (segment (start 208.25 85.5) (end 208.25 86.654) (width 0.254) (layer F.Cu) (net 32))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5C6A8150) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5C7DE63B) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3068,7 +3068,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5C7DE638) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
