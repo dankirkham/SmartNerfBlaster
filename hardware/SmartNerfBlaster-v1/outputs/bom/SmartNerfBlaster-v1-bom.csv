@@ -1,0 +1,45 @@
+Source,/Users/dan/Projects/SmartNerfBlaster/hardware/SmartNerfBlaster-v1/SmartNerfBlaster.sch
+Kicad Rev,Eeschema (5.0.1-3-g963ef8bb5)
+Generated Date,Tuesday, March 05, 2019 at 07:52:43 PM
+
+Title,SmartNerfBlaster
+Company,Dan Kirkham
+Revision,v1
+Date Issue,2019-03-04
+Comment,github.com/dankirkham
+
+Reference,Value,Library,Library Ref
+U2,ATmega328P-PU,MCU_Microchip_ATmega,ATmega328P-PU
+U1,L7805,Regulator_Linear,L7805
+C4,100nF,Device,C
+Y1,Crystal,Device,Crystal
+C5,22uF,Device,CP
+C6,22uF,Device,CP
+C3,100nF,Device,C
+J1,Conn_01x02_Male,Connector,Conn_01x02_Male
+J3,Conn_01x04_Male,Connector,Conn_01x04_Male
+J2,Conn_01x06_Male,Connector,Conn_01x06_Male
+J4,Screw_Terminal_01x02,Connector,Screw_Terminal_01x02
+J5,Screw_Terminal_01x02,Connector,Screw_Terminal_01x02
+R4,10k,Device,R
+R5,10k,Device,R
+R6,10k,Device,R
+R7,10k,Device,R
+R8,10k,Device,R
+R3,10k,Device,R
+J6,Conn_02x03_Odd_Even,Connector_Generic,Conn_02x03_Odd_Even
+R1,6.8k,Device,R
+R2,6.8k,Device,R
+C1,100uF,Device,CP
+C2,270uF,Device,CP
+C9,100uF,Device,CP
+C8,100uF,Device,CP
+C7,100uF,Device,CP
+D1,LED,Device,LED
+D2,LED,Device,LED
+D3,LED,Device,LED
+R9,330,Device,R
+R10,330,Device,R
+R11,330,Device,R
+Q1,FQP30N06L,SmartNerfBlasterSymbols,FQP30N06L
+Q2,FQP30N06L,SmartNerfBlasterSymbols,FQP30N06L
