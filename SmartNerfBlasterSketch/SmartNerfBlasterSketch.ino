@@ -1,11 +1,11 @@
 // Configuration
 #define PUSHER_CHOOCH_FACTOR 100
-#define FLYWHEEL_CHOOCH_FACTOR 100
+#define FLYWHEEL_CHOOCH_FACTOR 50
 #define BURST_SHOTS 3
 #define FLYWHEEL_SPINUP_DELAY_MILLIS 1000
 #define DEBOUNCE_FIRE_SELECT_MILLIS 5
-#define DEBOUNCE_PUSHER_FALLING_EDGE_MILLIS 25
-#define DEBOUNCE_PUSHER_RISING_EDGE_MILLIS 25
+#define DEBOUNCE_PUSHER_FALLING_EDGE_MILLIS 5
+#define DEBOUNCE_PUSHER_RISING_EDGE_MILLIS 5
 #define DEBOUNCE_TRIGGER_FALLING_EDGE_MILLIS 5
 
 // Constants
@@ -204,9 +204,15 @@ void loop() {
       analogWrite(PIN_FLYWHEEL_MOTOR, FLYWHEEL_CHOOCH_FACTOR);
 
       if (!pusher_reset_pressed) {
-        pusher_millis = new_millis;
+        shots_remaining--;
 
-        state = STATE_PUSHER_DEBOUCE_FALLING_EDGE;
+        if (shots_remaining <= 0) {
+          state = STATE_TRIGGER_FALLING_EDGE_WAIT;
+        } else {
+          pusher_millis = new_millis;
+
+          state = STATE_PUSHER_DEBOUCE_FALLING_EDGE;
+        }
       }
       break;
 
@@ -224,15 +230,9 @@ void loop() {
       analogWrite(PIN_FLYWHEEL_MOTOR, FLYWHEEL_CHOOCH_FACTOR);
 
       if (pusher_reset_pressed) {
-        shots_remaining--;
+        pusher_millis = new_millis;
 
-        if (shots_remaining <= 0) {
-          state = STATE_TRIGGER_FALLING_EDGE_WAIT;
-        } else {
-          pusher_millis = new_millis;
-
-          state = STATE_PUSHER_DEBOUNCE_RISING_EDGE;
-        }
+        state = STATE_PUSHER_DEBOUNCE_RISING_EDGE;
       }
       break;
 
@@ -241,7 +241,7 @@ void loop() {
       analogWrite(PIN_FLYWHEEL_MOTOR, FLYWHEEL_CHOOCH_FACTOR);
 
       if ((new_millis - pusher_millis) > DEBOUNCE_PUSHER_RISING_EDGE_MILLIS) {
-        state = STATE_PUSHER_RISING_EDGE_WAIT;
+        state = STATE_PUSHER_FALLING_EDGE_WAIT;
       }
       break;
 
