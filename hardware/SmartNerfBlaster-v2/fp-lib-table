@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name SmartNerfBlasterFootprints)(type KiCad)(uri ${KIPRJMOD}/SmartNerfBlasterFootprints)(options "")(descr ""))
+)

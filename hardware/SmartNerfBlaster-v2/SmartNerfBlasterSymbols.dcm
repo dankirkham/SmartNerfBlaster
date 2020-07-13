@@ -1,0 +1,20 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1825910-6
+D SWITCH TACTILE SPST-NO 0.05A 24V
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English
+$ENDCMP
+#
+$CMP BUZ11
+D 30A Id, 50V Vds, N-Channel Power MOSFET, TO-220
+K N-Channel Power MOSFET
+F http://www.fairchildsemi.com/ds/BU/BUZ11.pdf
+$ENDCMP
+#
+$CMP FQP30N06L
+D N-Channel MOSFET 60 V, 32 A, 35 mΩ
+K N-Channel MOSFET
+F https://www.mouser.com/ds/2/149/FQP30N06L-1009543.pdf
+$ENDCMP
+#
+#End Doc Library
